@@ -1,7 +1,7 @@
 import { useContext } from "react"
 import { MyContext } from "./ContextApi/MyApi"
 import Card from "./Card";
-import { BallTriangle } from  'react-loader-spinner'
+
 
 const Home = () => {
 
@@ -11,16 +11,7 @@ const Home = () => {
  if(loading){
   return <div className=" flex justify-center items-center h-screen w-full ">
  
- <BallTriangle
-  height={100}
-  width={100}
-  radius={5}
-  color="#4fa94d"
-  ariaLabel="ball-triangle-loading"
-  wrapperClass={{}}
-  wrapperStyle=""
-  visible={true}
-/>
+ <p>Loading...........</p>
  </div>
 
 }
